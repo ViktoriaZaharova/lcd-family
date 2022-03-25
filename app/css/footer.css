@@ -1,0 +1,90 @@
+/*==========  footer  ==========*/
+footer {
+  background: #33572C;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  padding: 30px 0; }
+
+.copyright {
+  font-size: 12px;
+  color: #7E9A7E;
+  max-width: 583px;
+  margin: 0 auto; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .list-social li {
+    margin: 0 12px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      fill: #fff;
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      padding: 10px 7px; }
+      .list-social li a:hover {
+        fill: #F48300; }
+
+.logo-company {
+  max-width: 191px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.list-messenger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 0 50px; }
+  .list-messenger li {
+    margin: 0 28px 0 0; }
+    .list-messenger li:last-child {
+      margin: 0; }
+  .list-messenger__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    fill: #fff; }
+    .list-messenger__links:hover {
+      fill: #F48300;
+      color: #F48300; }
+  .list-messenger .svg-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px 0 0;
+    padding: 7px; }
+
+/*==========  footer end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
