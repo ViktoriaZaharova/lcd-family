@@ -72,6 +72,9 @@ img {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
 a {
   display: block;
   text-decoration: none;
@@ -172,7 +175,8 @@ h1 {
   font-size: 84px;
   font-weight: 500;
   color: #5A554B;
-  width: 100%; }
+  width: 100%;
+  line-height: 74px; }
 
 h2 {
   width: 100%;
@@ -182,9 +186,15 @@ h2 {
 .bg-beige {
   background: #EBE7E1; }
 
+.bg-white {
+  background: #fff; }
+
 .bg-green {
   background: #33572C;
   color: #fff; }
+
+.p-120 {
+  padding: 120px 0; }
 
 .p-80 {
   padding: 80px 0; }
@@ -192,3 +202,89 @@ h2 {
 .box-text {
   color: #5A554B;
   font-size: 14px; }
+
+.slick-slider {
+  width: 100%; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-arrow {
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  opacity: 1;
+  width: 44px;
+  height: 44px;
+  fill: #FDC31D;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%; }
+  .slick-arrow:hover {
+    background: #F48300;
+    fill: #fff; }
+  .slick-arrow .svg-icon {
+    width: 24px; }
+
+.slick-next {
+  margin: 0 0 0 10px; }
+
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%; }
+
+.slick-border {
+  background: transparent;
+  border: 1px solid #fff;
+  fill: #fff; }
+  .slick-border:hover {
+    background: #fff;
+    fill: #F4B702; }
+
+.slick-dots {
+  bottom: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+  z-index: 1;
+  opacity: 1; }
+  .slick-dots li {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    outline: none;
+    margin: 0 8px 0 0;
+    background: #fff; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #F48300; }

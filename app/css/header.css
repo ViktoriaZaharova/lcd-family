@@ -1,4 +1,55 @@
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  header  ==========*/
+header {
+  background: #EBE7E1;
+  padding: 20px 0; }
+  header .logo {
+    margin: 0 auto 0 0; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 212px;
+  width: 100%; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 58px 0 0; }
+  .menu li {
+    margin: 0 30px 0 0; }
+    .menu li:last-child {
+      margin: 0; }
+    .menu li a {
+      position: relative;
+      padding: 0 0 11px;
+      color: #676258; }
+      .menu li a:before {
+        content: '';
+        position: absolute;
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        width: 9px;
+        height: 2px;
+        background: #F48300;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+      .menu li a:hover:before {
+        width: 100%; }
+
+/*==========  header end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
