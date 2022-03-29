@@ -67,7 +67,7 @@ a
   text-decoration: none
   transition: .3s ease
   outline: none
-
+  width: fit-content
   &:hover, &:focus
     text-decoration: none
     
@@ -75,20 +75,65 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 20px 0 6px
   box-sizing: border-box
   font-family: $default-font
   border: none
+    bottom: 1px solid #D9D7D1
     radius: 0
   width: 100%
+  height: 42px
+  font-size: 14px
+  color: #918475
+  &::placeholder
+    color: #D9D7D1
   &:hover
     outline: none
     box-shadow: none
-  
+    color: #918475
+    + .label-text
+        color: #918475
+  &:focus
+    padding: 20px 0 6px
+    border-color: #E26101
+    + .label-text
+        top: 0
+        bottom: auto
+        color: #918475
+  &:not(:focus):valid
+    + .label-text
+        top: 0
+        bottom: auto
+        color: #918475
+
+.error-box
+  input
+    color: #FF0000
+    border-bottom-color: #FF0000
+  .error-small
+    display: block
+
+.error-small
+  color: #FF0000
+  font-size: 10px
+  display: none
+  width: 100%
+  margin: 7px 0 0
+
+.label-text
+  position: absolute
+  color: #D9D7D1
+  top: 20px
+  left: 0
+  font-size: 14px
+  transition: .3s ease
 
 label
   display: block
   width: 100%
+  margin: 0 0 37px
+  &:last-child
+    margin: 0
 
 button, .btn
   outline: none
@@ -100,7 +145,9 @@ button, .btn
   margin: 0
   border: none
     radius: 0
-
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn
   display: flex
@@ -124,7 +171,12 @@ button, .btn
     background: #E26101
     color: #fff
 
-
+.btn-red
+  background: #F06600
+  color: #fff
+  &:hover
+    background: #E26101
+    color: #fff
 
 .svg-icon
   display: inline-block
@@ -140,6 +192,7 @@ strong, b
 
 .container
   max-width: 1270px
+  padding: 0 10px
 
 .row
   margin: 0 -10px
@@ -242,7 +295,9 @@ h2
     border-radius: 50%
     outline: none
     margin: 0 8px 0 0
-    background: #fff
+    background: rgba(#fff, .7)
+    &:hover
+      background: #fff
     &:last-child
       margin: 0
     button

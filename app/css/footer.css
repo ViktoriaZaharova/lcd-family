@@ -86,5 +86,104 @@ footer {
     padding: 7px; }
 
 /*==========  footer end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  modal  ==========*/
+.modal-dialog {
+  max-width: 580px; }
+
+.modal-content {
+  border: none;
+    border-radius: 30px;
+  background: #fff;
+  padding: 30px; }
+  .modal-content h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 auto 33px;
+    max-width: 390px; }
+  .modal-content .btn {
+    margin: 0 auto;
+    padding: 0 57px; }
+
+.consent {
+  margin: 33px auto 0;
+  color: #C9C7C0;
+  font-size: 12px; }
+
+.modal-header {
+  padding: 0;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 40px;
+  border: none;
+    border-radius: 0; }
+  .modal-header .close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    z-index: 1;
+    opacity: 1;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    fill: #BAB4A7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0; }
+    .modal-header .close:hover {
+      fill: #F48300;
+      opacity: 1; }
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+  opacity: 1; }
+
+.modal-backdrop {
+  background: #D9D6D0; }
+
+.modal-backdrop.show {
+  opacity: .9; }
+
+.logo-modal {
+  margin: 0 auto 14px;
+  max-width: 63px; }
+
+.modal-title {
+  text-align: center;
+  width: 100%;
+  color: #918475;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; }
+
+.modal-body {
+  padding: 0;
+  width: 100%; }
+
+.form {
+  width: 100%; }
+  .form label {
+    max-width: 380px;
+    margin: 0 auto 50px;
+    position: relative; }
+  .form button {
+    margin: 58px auto 0;
+    padding: 0 44px; }
+
+#objectModal .modal-dialog {
+  max-width: 850px; }
+
+#objectModal .advantages-object-item {
+  margin: 50px 0 0; }
+
+#objectModal .modal-content {
+  padding: 50px 40px 40px; }
+
+/*==========  modal end  ==========*/
