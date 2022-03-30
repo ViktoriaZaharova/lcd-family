@@ -1,3 +1,20 @@
+// preloader
+$(".preloader").css("opacity", 1);
+$('body, html').addClass('no-scroll');
+setTimeout(function () {
+
+    $(".text-load").css("opacity", 0);
+    $(".text-load2, .load-line2").fadeIn('show');
+}, 3000);
+
+
+setTimeout(function () {
+    $(".preloader").fadeOut('show');
+    $('body, html').removeClass('no-scroll');
+}, 7000);
+
+// preloader end
+
 $('.family-slider').slick({
     slidesToShow: 1,
     arrows: true,
@@ -89,35 +106,37 @@ $('.stages-work-slider').slick({
 
 
 //плавный скролл
-$(document).ready(function () {
-    $('.go_to').click(function (e) {
-        e.preventDefault();
-        var scroll_el = $(this).attr('href');
-        if ($(scroll_el).length !== 0) {
-            $('html, body').animate({
-                scrollTop: $(scroll_el).offset().top
-            }, 1000);
-        }
-
-        $('.mobile-menu').fadeOut();
-
-        return false;
+$(document).ready(function () { //плавный скролл
+    $(".go_to").on("click", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top,
+            heightHeader = $('header').height();
+        $('body,html').animate({scrollTop: top - heightHeader}, 1500);
     });
 });
 //плавный скролл end
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        $('header').addClass('fixed');
+    } else {
+        $('header').removeClass('fixed');
+    }
+});
 
 let homeSlider = $('.stages-work-slider');
 
 $('.counter-slide__default').text("из " + homeSlider.slick("getSlick").slideCount);
 
-homeSlider.on('afterChange', function(event, slick, currentSlide){
-    $(".counter-slide__cp").text(currentSlide<10?`${currentSlide+1}`:currentSlide+1);
+homeSlider.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
 });
 
 $('[name="phone"]').mask('+7(999) 999-99-99');
 
 // slick active
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 768) {
         $('.documents-slider:not(.slick-initialized)').slick({
             dots: false,
@@ -152,3 +171,4 @@ $('.btn-close').click(function (e) {
     e.preventDefault();
     $('.mobile-menu').fadeOut();
 });
+

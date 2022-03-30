@@ -1,9 +1,18 @@
 /*==========  header  ==========*/
 header {
   background: #EBE7E1;
-  padding: 20px 0; }
+  padding: 20px 0;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
   header .logo {
     margin: 0 auto 0 0; }
+  header.fixed {
+    background: #fff; }
 
 .logo {
   display: -webkit-box;
